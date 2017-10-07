@@ -1,7 +1,7 @@
 apply plugin: 'java'
 
 sourceSets.main.java.srcDir('.')
-sourceSets.main.output.classesDir('bin')
+// sourceSets.main.output.classesDir('bin')
 
 repositories { mavenCentral(); }
 
