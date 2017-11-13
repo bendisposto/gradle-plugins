@@ -1,9 +1,13 @@
 apply plugin: 'java'
 
 sourceSets.main.java.srcDir('.')
+sourceSets.test.java.srcDir('.')
 sourceSets.main.output.classesDir('klassen')
 
 repositories { mavenCentral(); }
+dependencies {
+  compile "junit:junit:4.12"
+}
 
 def java(String x, String i = "") {
   def arguments = x.split(" ")
